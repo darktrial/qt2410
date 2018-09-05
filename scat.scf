@@ -1,0 +1,16 @@
+
+Flash 0x33A00000 0x100000
+{      
+     EXEC1 0x33A00000 0x100000
+    {  
+         
+        init.o (Init, +First) 
+        * (+RO,+RW,+ZI)
+    }  
+    32BITSram 0x0 0x1000
+    {
+    	vector.o (Vect, +First)
+    }
+
+}
+
